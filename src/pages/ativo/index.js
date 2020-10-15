@@ -37,12 +37,12 @@ export default class Ativo extends Component{
                 <div className="container-links">
 
                     <Link to="/empresa" className="back">Início</Link>
-                    <Link to="/unidade" className="back">Voltar</Link>
+                    <Link to="/unidade" className="back">Unidades</Link>
                     
                 </div>
 
 
-                <div className="unit-list">
+                <div className="actives-list">
                     {active.map(ativo => (
 
                         <article key={ativo._id}>
@@ -51,8 +51,8 @@ export default class Ativo extends Component{
                             <p>Descrição: {ativo.description}</p>
                             <p>Modelo: {ativo.model}</p>
                             <p>Status: {ativo.status}</p>
-                            <p>N° Série: {ativo._id}</p>
                             <p>Nível de saúde: {ativo.healthStatus}</p>
+                            <p>N° Série: {ativo._id}</p>
                             <p>Unidade: {ativo.unidade}</p>
 
                         </article>

@@ -6,6 +6,7 @@ import Empresa from './pages/empresa'
 import Unidade from './pages/unidade'
 import Ativo from './pages/ativo'
 import getActive from './pages/getActive'
+import allUnits from './pages/unidade/allUnits'
 
 const Routes = () => (
     <BrowserRouter>
@@ -14,7 +15,7 @@ const Routes = () => (
             <Route path="/empresas" component={Unidade} />
             <Route path="/ativo" exact component={Ativo}/>
             <Route path="/ativos" component={getActive}/>
-            <Route path="/unidade" exact component={Unidade}/>
+            <Route path="/unidade" exact component={allUnits}/>
         </Switch>
     </BrowserRouter>
 )

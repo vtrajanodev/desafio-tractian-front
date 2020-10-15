@@ -40,19 +40,21 @@ export default class getActive extends Component{
                 <div className="container-links">
 
                     <Link to="/empresa" className="back">Início</Link>
-                    <Link to="empresas?empresa=5f7fedc4d625fc29703e1acb" className="back">Voltar</Link>
+                    <Link to="/unidade" className="back">Voltar</Link>
                     
                 </div>
 
 
-                <div className="unit-list">
+                <div className="active-list">
                     {active.map(ativo => (
 
                         <article key={ativo._id}>
                             <img alt="Img do ativo" width="150" height="150" src={ativo.img}></img>
                             <p>Nome: {ativo.name}</p>
                             <p>Descrição: {ativo.description}</p>
+                            <p>Status: {ativo.status}</p>
                             <p>Modelo: {ativo.model}</p>
+                            <p>Nivel de saúde: {ativo.healthStatus}</p>
                             <p>N° Série: {ativo._id}</p>
                             <p>Unidade: {ativo.unidade}</p>
 

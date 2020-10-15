@@ -52,7 +52,7 @@ export default class Empresa extends Component{
                 </div>
                 
                 <div className="box">
-                <p>Manuntenções em geral</p>
+                <p>Soluções em cilindros de freio</p>
 
                 </div>
                 
@@ -62,7 +62,7 @@ export default class Empresa extends Component{
                 </div>
 
                 <div className="box">
-                <p>Garantia de 18 meses</p>
+                <p>Garantia de serviço por 18 meses</p>
 
                 </div>
 
