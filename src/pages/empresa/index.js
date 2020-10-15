@@ -7,7 +7,6 @@ import { Link } from 'react-router-dom'
 export default class Empresa extends Component{
     state = {
         empresa: [],
-        
     }
 
 
@@ -17,10 +16,9 @@ export default class Empresa extends Component{
         
     }
 
-     loadCompany = async () => {
+    loadCompany = async () => {
         
         const empresa = await api.get('/empresa')
-        console.log(empresa.data)
         
         this.setState({empresa: empresa.data})
         

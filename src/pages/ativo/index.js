@@ -7,17 +7,16 @@ import { Link } from 'react-router-dom'
 export default class Ativo extends Component{
     state = {
         active: [],
-        unidade: ''
     }
 
 
     componentDidMount(){
-        document.title = 'Nossas Unidades';
+        document.title = 'Ativos em estoque';
         this.loadActive()
         
     }
 
-     loadActive = async () => {
+    loadActive = async () => {
         
         const active = await api.get(`/ativo`)
         console.log(active.data)
@@ -47,7 +46,7 @@ export default class Ativo extends Component{
                     {active.map(ativo => (
 
                         <article key={ativo._id}>
-                            <img width="150" height="150" src={ativo.img}></img>
+                            <img width="150" height="150" alt="Img do ativo" src={ativo.img}></img>
                             <p>Nome: {ativo.name}</p>
                             <p>Descrição: {ativo.description}</p>
                             <p>Modelo: {ativo.model}</p>

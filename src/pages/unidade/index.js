@@ -18,10 +18,10 @@ export default class Unidade extends Component{
 
 
     loadUnit = async () => {
-        
-        const unit = await api.get('/empresas?empresa=5f7fedc4d625fc29703e1acb')
-        
-        console.log(unit.data)
+
+        const { location: { search } } = this.props;
+
+        const unit = await api.get(`/empresas${search}`)
         
         this.setState({unit: unit.data})
         
@@ -45,6 +45,7 @@ export default class Unidade extends Component{
 
 
                 <div className="unit-list">
+                    
                     {unit.map(unidade => (
 
                         <article key={unidade._id}>

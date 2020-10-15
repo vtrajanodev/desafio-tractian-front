@@ -13,7 +13,7 @@ export default class getActive extends Component{
     
 
     componentDidMount(){
-        document.title = 'Ativos';
+        document.title = 'Ativos por unidade';
         this.loadActive()
         
     }
@@ -22,12 +22,8 @@ export default class getActive extends Component{
 
         const { location: { search } } = this.props;
 
-        console.log(search)
-
         const active = await api.get(`/ativos${search}`)
-        
-        console.log(active.data)
-        
+                
         this.setState({active: active.data})
         
     }
@@ -53,7 +49,7 @@ export default class getActive extends Component{
                     {active.map(ativo => (
 
                         <article key={ativo._id}>
-                            <img width="150" height="150" src={ativo.img}></img>
+                            <img alt="Img do ativo" width="150" height="150" src={ativo.img}></img>
                             <p>Nome: {ativo.name}</p>
                             <p>Descrição: {ativo.description}</p>
                             <p>Modelo: {ativo.model}</p>
