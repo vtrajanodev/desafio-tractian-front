@@ -1,6 +1,7 @@
 import React , { Component } from 'react'
 import api from '../../services/api'
 import './styles.css'
+import { Link } from 'react-router-dom'
 
 
 export default class Empresa extends Component{
@@ -71,8 +72,8 @@ export default class Empresa extends Component{
 
             <div className="links"> 
                
-                <a href={`/empresas?empresa=${empresa.map(company => (company._id))}` } >ACESSAR UNIDADES</a>
-                <a href={`/ativo`}>ACESSAR ATIVOS</a>
+                <Link to={`/empresas?empresa=${empresa.map(company => (company._id))}` } >ACESSAR UNIDADES</Link>
+                <Link to={`/ativo`}>ACESSAR ATIVOS</Link>
 
             </div>
 

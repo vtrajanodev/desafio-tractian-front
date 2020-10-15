@@ -1,7 +1,6 @@
 import React from 'react';
 import Header from './components/header'
 import './styles.css'
-import Empresa from './pages/empresa'
 import Routes from './routes'
 
 function App() {

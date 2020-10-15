@@ -4,22 +4,28 @@ import './styles.css'
 import { Link } from 'react-router-dom'
 
 
-export default class Ativo extends Component{
+export default class getActive extends Component{
     state = {
         active: [],
         unidade: ''
     }
 
+    
 
     componentDidMount(){
-        document.title = 'Nossas Unidades';
+        document.title = 'Ativos';
         this.loadActive()
         
     }
 
      loadActive = async () => {
+
+        const { location: { search } } = this.props;
+
+        console.log(search)
+
+        const active = await api.get(`/ativos${search}`)
         
-        const active = await api.get(`/ativo`)
         console.log(active.data)
         
         this.setState({active: active.data})
@@ -38,7 +44,7 @@ export default class Ativo extends Component{
                 <div className="container-links">
 
                     <Link to="/empresa" className="back">Início</Link>
-                    <Link to="/unidade" className="back">Voltar</Link>
+                    <Link to="empresas?empresa=5f7fedc4d625fc29703e1acb" className="back">Voltar</Link>
                     
                 </div>
 

@@ -1,6 +1,7 @@
 import React , { Component } from 'react'
 import api from '../../services/api'
 import './styles.css'
+import { Link } from 'react-router-dom'
 
 
 export default class Unidade extends Component{
@@ -9,16 +10,17 @@ export default class Unidade extends Component{
         
     }
 
-
     componentDidMount(){
         document.title = 'Nossas Unidades';
         this.loadUnit()
         
     }
 
-     loadUnit = async () => {
+
+    loadUnit = async () => {
         
-        const unit = await api.get('/unidade')
+        const unit = await api.get('/empresas?empresa=5f7fedc4d625fc29703e1acb')
+        
         console.log(unit.data)
         
         this.setState({unit: unit.data})
@@ -36,8 +38,8 @@ export default class Unidade extends Component{
                 
                 <div className="container-links">
 
-                    <a href="/empresa" className="back">Início</a>
-                    <a href="/empresa" className="back">Voltar</a>
+                    <Link to="/empresa" className="back">Início</Link>
+                    <Link to="/empresa" className="back">Voltar</Link>
                     
                 </div>
 
@@ -49,7 +51,7 @@ export default class Unidade extends Component{
                             <strong> <h1>Unidade: {unidade.name}</h1></strong>
                             <p>Endereço: {unidade.description}</p>
                             <p>Empresa: {unidade.empresa}</p>
-                            <a href="#">Buscar ativos</a>
+                            <a href={`/ativos?unidade=${unidade._id}`}>Buscar ativos</a>
                         </article>
                     ))}
 
