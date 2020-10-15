@@ -3,7 +3,7 @@ import api from '../../services/api'
 import './styles.css'
 
 
-export default class Main extends Component{
+export default class Unidade extends Component{
     state = {
         unit: [],
         

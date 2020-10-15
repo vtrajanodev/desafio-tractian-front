@@ -3,7 +3,7 @@ import api from '../../services/api'
 import './styles.css'
 
 
-export default class Main extends Component{
+export default class Empresa extends Component{
     state = {
         empresa: [],
         
@@ -72,7 +72,7 @@ export default class Main extends Component{
             <div className="links"> 
                
                 <a href={`/empresas?empresa=${empresa.map(company => (company._id))}` } >ACESSAR UNIDADES</a>
-                <a href="">ACESSAR ATIVOS</a>
+                <a href={`/ativo`}>ACESSAR ATIVOS</a>
 
             </div>
 
