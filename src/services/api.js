@@ -1,5 +1,5 @@
 import Axios from 'axios'
 
-const api = Axios.create({baseURL: 'http://localhost:8080'})
+const api = Axios.create({baseURL: 'http://tractian-api.herokuapp.com'})
 
 export default api;
