@@ -56,7 +56,7 @@ export default class getActive extends Component{
                             <p>Modelo: {ativo.model}</p>
                             <p>Nivel de saúde: {ativo.healthStatus}</p>
                             <p>N° Série: {ativo._id}</p>
-                            <p>Unidade: {ativo.unidade}</p>
+                            <p>Ref Unidade: {ativo.unidade}</p>
 
                         </article>
                     ))}

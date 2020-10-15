@@ -19,7 +19,6 @@ export default class Ativo extends Component{
     loadActive = async () => {
         
         const active = await api.get(`/ativo`)
-        console.log(active.data)
         
         this.setState({active: active.data})
         
@@ -53,7 +52,7 @@ export default class Ativo extends Component{
                             <p>Status: {ativo.status}</p>
                             <p>Nível de saúde: {ativo.healthStatus}</p>
                             <p>N° Série: {ativo._id}</p>
-                            <p>Unidade: {ativo.unidade}</p>
+                            <p>Ref Unidade: {ativo.unidade}</p>
 
                         </article>
                     ))}
