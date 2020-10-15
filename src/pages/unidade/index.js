@@ -49,9 +49,9 @@ export default class Unidade extends Component{
                     {unit.map(unidade => (
 
                         <article key={unidade._id}>
-                            <strong> <h1>Unidade: {unidade.name}</h1></strong>
-                            <p>Endereço: {unidade.description}</p>
-                            <p>Empresa: {unidade.empresa}</p>
+                            <strong> <h1>{unidade.name}</h1></strong>
+                            <p><strong>Endereço:</strong> {unidade.adress}</p>
+                            <p><strong>Especialização:</strong> {unidade.description}</p>
                             <a href={`/ativos?unidade=${unidade._id}`}>Buscar ativos</a>
                         </article>
                     ))}

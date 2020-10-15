@@ -50,7 +50,9 @@ export default class Ativo extends Component{
                             <p>Nome: {ativo.name}</p>
                             <p>Descrição: {ativo.description}</p>
                             <p>Modelo: {ativo.model}</p>
+                            <p>Status: {ativo.status}</p>
                             <p>N° Série: {ativo._id}</p>
+                            <p>Nível de saúde: {ativo.healthStatus}</p>
                             <p>Unidade: {ativo.unidade}</p>
 
                         </article>

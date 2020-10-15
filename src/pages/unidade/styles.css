@@ -36,6 +36,11 @@
 
 }
 
+.unit-list article h1{
+    margin-bottom: 20px;
+    font-size: 28px;
+}
+
 .unit-list article a:hover{
     border: 2px solid #000000;
     color: #000;
