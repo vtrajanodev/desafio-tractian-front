@@ -1,0 +1,83 @@
+import React , { Component } from 'react'
+import api from '../../services/api'
+import './styles.css'
+
+
+export default class Main extends Component{
+    state = {
+        empresa: [],
+        
+    }
+
+
+    componentDidMount(){
+        document.title = 'Supersônico Freios';
+        this.loadCompany()
+        
+    }
+
+     loadCompany = async () => {
+        
+        const empresa = await api.get('/empresa')
+        console.log(empresa.data)
+        
+        this.setState({empresa: empresa.data})
+        
+    }
+
+
+    render() {
+
+        const { empresa } = this.state;
+
+    return (
+
+        <div className="content">
+
+
+            <div className="title">
+                <h2>
+                    {empresa.map(company => (
+                    company.name))}
+                </h2>
+
+                <p>{empresa.map(company => (
+                    company.description))}</p>
+            </div>  
+
+            <div className="box-align"> 
+                
+                <div className="box">
+                   <p>Troca de fluido de freio</p>
+                    
+                </div>
+                
+                <div className="box">
+                <p>Manuntenções em geral</p>
+
+                </div>
+                
+                <div className="box">
+                <p>Ativos mordernos e de qualidade</p>
+
+                </div>
+
+                <div className="box">
+                <p>Garantia de 18 meses</p>
+
+                </div>
+
+            </div> 
+
+            <div className="links"> 
+               
+                <a href={`/empresas?empresa=${empresa.map(company => (company._id))}` } >ACESSAR UNIDADES</a>
+                <a href="">ACESSAR ATIVOS</a>
+
+            </div>
+
+
+        </div>
+    )
+    }
+}

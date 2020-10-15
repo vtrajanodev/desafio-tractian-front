@@ -1,0 +1,20 @@
+header#main-header{
+    height: 60px;
+    background: #0868FA;
+    width: 100%;
+    font-weight: bold;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header#main-header h1{
+    font-size: 32px;
+    margin: 0 10%;
+}
+
+
+
+
+
