@@ -1,0 +1,45 @@
+footer#main-footer{
+    height: 60px;
+    background: #DADADA;
+    width: 101%;
+    font-weight: bold;
+    margin: 0 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: left;
+}
+
+footer#main-footer p{
+    color: black;
+    display: flex;
+    flex-direction: row;
+    margin: 15px 20px;
+}
+
+@media(max-width: 500px){
+    
+    footer#main-footer p{
+        font-size: 12px;
+        text-align: center;
+
+    }
+}
+
+@media(min-width: 500px){
+    
+    footer#main-footer p{
+        font-size: 14px;
+        text-align: center;
+        
+    }
+}
+
+@media(min-width: 750px){
+    
+    footer#main-footer p{
+        font-size: 17px;
+        text-align: center;
+
+        
+    }
+}
