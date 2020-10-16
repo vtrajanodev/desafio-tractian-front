@@ -8,7 +8,6 @@ import './styles.css'
     <p>Feito por: Victor Trajano</p>
     <p>Contato: (92)98212-7867</p>
     <p>Email: trajanodev@hotmail.com</p>
-
     </footer>
     
     
