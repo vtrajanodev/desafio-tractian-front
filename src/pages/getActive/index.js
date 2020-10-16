@@ -6,8 +6,7 @@ import { Link } from 'react-router-dom'
 
 export default class getActive extends Component{
     state = {
-        active: [],
-        unidade: ''
+        active: []
     }
 
     
@@ -18,20 +17,24 @@ export default class getActive extends Component{
         
     }
 
-     loadActive = async () => {
+     loadActive = async (page = 1) => {
 
         const { location: { search } } = this.props;
 
         const active = await api.get(`/ativos${search}`)
-                
-        this.setState({active: active.data})
+                        
+        this.setState({ active: active.data })
+
         
     }
+
+   
+
 
 
     render() {
 
-        const { active } = this.state;
+        const {active} = this.state
 
         return (
 
@@ -62,9 +65,6 @@ export default class getActive extends Component{
                     ))}
 
                 </div>
-
-
-
             </div> 
            
         )

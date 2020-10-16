@@ -7,6 +7,8 @@ import { Link } from 'react-router-dom'
 export default class Ativo extends Component{
     state = {
         active: [],
+        productInfo: {},
+        page: 1
     }
 
 
@@ -16,18 +18,42 @@ export default class Ativo extends Component{
         
     }
 
-    loadActive = async () => {
+    loadActive = async (page = 1) => {
         
-        const active = await api.get(`/ativo`)
+        const active = await api.get(`/ativo?page=${page}`)
+
+        const {docs, ...productInfo} = active.data
         
-        this.setState({active: active.data})
+        this.setState({active: docs, productInfo, page })
         
+    }
+
+    prevPage = () => {
+        const {page} = this.state
+
+        if (page === 1) return;
+
+        const pageNumber = page - 1
+
+        this.loadActive(pageNumber)
+    }
+
+    
+    nextPage = () => {
+        const {page, productInfo} = this.state
+
+        if (page === productInfo) return;
+
+        const pageNumber = page + 1
+
+        this.loadActive(pageNumber)
     }
 
 
     render() {
 
-        const { active } = this.state;
+        const {active , page, productInfo} = this.state
+
 
         return (
 
@@ -58,6 +84,16 @@ export default class Ativo extends Component{
                     ))}
 
                 </div>
+
+                <div className="actions">
+               
+                    <button disabled={page === 1} onClick={this.prevPage} >Anterior</button>
+                    <button className="desabilitado" >Pagina: {page}</button>
+
+                    <button disabled={page === productInfo.pages} onClick={this.nextPage}>Próximo</button>
+                
+                </div>
+
 
 
 
