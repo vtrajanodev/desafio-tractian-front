@@ -99,9 +99,10 @@ div.links a:hover{
     
 
     .title h2{
-        font-size: 40px;
-        margin: 20px 0;
-        display: inline-block;
+        font-size: 30px;
+        margin: 0 auto;
+        display: block;
+        
     }
 
     .title p{
@@ -111,7 +112,7 @@ div.links a:hover{
 
     div.box-align{
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         flex-wrap: wrap;
     }
 
@@ -135,7 +136,7 @@ div.links a:hover{
 
     div.links a{
     
-    font-size: 19px;
+    font-size: 17px;
     text-align: center;
     transition: all 0s; 
 
@@ -148,10 +149,10 @@ div.links a:hover{
     
 }
 
-@media (min-width: 451px){
+@media (min-width: 501px){
 
     .title h2{
-        font-size: 40px;
+        font-size: 32px;
         margin: 20px 0;
         display: inline-block;
     }
@@ -163,18 +164,179 @@ div.links a:hover{
 
     div.box-align{
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         flex-wrap: wrap;
     }
 
     div.box{
-        height: 150px;
-        width: 120px;
+        height: 170px;
+        width: 190px;
         margin: 15px 20px;
     }
    
     div.box p{
-        font-size: 15px;
+        font-size: 20px;
+        
+    }
+
+    div.links{
+
+        display: flex;
+        height: 110px;
+        width: 80%;
+        justify-content: space-between;
+      
+    }
+
+    div.links a{
+    
+        font-size: 20px;
+        text-align: center;
+        transition: all 0s; 
+
+    }
+    div.links a:hover{
+        font-size: 24px;
+        border: 2px solid black;
+    
+    }
+}
+
+@media (min-width: 725px){
+
+    .title h2{
+        font-size: 34px;
+        margin: 20px 0;
+        display: inline-block;
+    }
+
+    .title p{
+        font-size: 28px;
+
+    }
+
+    div.box-align{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    div.box{
+        height: 200px;
+        width: 240px;
+        margin: 15px 20px;
+    }
+   
+    div.box p{
+        font-size: 20px;
+        
+    }
+
+    div.links{
+        display: flex;
+        height: 110px;
+        justify-content: center;
+        width: 80%;
+      
+    }
+
+    div.links a{
+    
+    font-size: 22px;
+    text-align: center;
+    transition: all 0s; 
+
+    }
+    div.links a:hover{
+        font-size: 24px;
+        border: 2px solid black;
+    
+    }
+
+
+}
+
+@media (min-width: 870px){
+
+    .title h2{
+        font-size: 42px;
+        margin: 20px 0;
+        display: inline-block;
+    }
+
+    .title p{
+        font-size: 36px;
+
+    }
+
+    div.box-align{
+        
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    div.box{
+        height: 180px;
+        width: 250px;
+        margin: 15px 20px;
+    }
+   
+    div.box p{
+        font-size: 20px;        
+        
+    }
+
+    div.links{
+
+        display: flex;
+        height: 110px;
+        width: 80%;
+        justify-content: space-between;
+      
+    }
+
+    div.links a{
+    
+    font-size: 20px;
+    text-align: center;
+    transition: all 0s; 
+
+    }
+    div.links a:hover{
+        font-size: 24px;
+        border: 2px solid black;
+    
+    }
+}
+
+@media (min-width: 1000px){
+
+    .title h2{
+        font-size: 42px;
+        margin: 20px 0;
+        display: inline-block;
+    }
+
+    .title p{
+        font-size: 36px;
+
+    }
+
+    div.box-align{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    div.box{
+        height: 200px;
+        width: 200px;
+        margin: 15px 20px;
+    }
+   
+    div.box p{
+        font-size: 20px;        
         
     }
 
@@ -187,13 +349,13 @@ div.links a:hover{
 
     div.links a{
     
-    font-size: 19px;
+    font-size: 23px;
     text-align: center;
     transition: all 0s; 
 
     }
     div.links a:hover{
-        font-size: 19px;
+        font-size: 24px;
         border: 2px solid black;
     
     }
