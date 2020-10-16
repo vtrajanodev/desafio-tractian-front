@@ -97,13 +97,16 @@ div.links a:hover{
 @media (max-width: 400px){
     
     .content{
-        margin: 5px 1%;
+        max-width: 500px;
     }
     
     .title h2{
         font-size: 26px;
-        margin: 10px 10px;
-        display: inline;
+        margin: 20px 0;
+        display: inline-block;
+        max-width: 500px;
+        text-shadow: 1px 3px 5px rgb(124, 124, 124);
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
     }
 
     .title p{
@@ -117,10 +120,10 @@ div.links a:hover{
     }
 
     div.box{
-        height: 120px;
-        width: auto;
+        height: 100px;
+        width: 140px;
         padding: 10px;
-        margin: 15px ;
+        margin: 15px auto;
     }
    
     div.box p{
@@ -131,6 +134,7 @@ div.links a:hover{
     div.links{
         display: flex;
         height: 130px;
+      
     }
 
     div.links a{
