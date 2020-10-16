@@ -5,12 +5,14 @@ body{
 
 .content{
     
-    margin: 20px 10px;
-    min-width: 400px;
+    max-width: 1100px;
+    margin: 20px auto 0 ;
+    padding: 0 20px;
     
 }
 
 .title p{
+    
     font-size: 24px;
     font-family: monospace;
     display: flex;
@@ -29,9 +31,9 @@ body{
 }
 
 div.box-align{
+
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-between; 
 }
 
 div.box{
@@ -41,7 +43,6 @@ div.box{
     background-color: #fff;
     margin: 20px 20px;
     display: flex;
-    justify-content: center;
     align-items: center;
     text-align: center;   
     border-radius: 8px; 
@@ -94,23 +95,18 @@ div.links a:hover{
 /*--------------------------------RESPONSIVIDADE-----------------------------------------------*/
 
 
-@media (max-width: 400px){
+@media (max-width: 550px){
     
-    .content{
-        max-width: 500px;
-    }
-    
+
     .title h2{
-        font-size: 26px;
+        font-size: 30px;
         margin: 20px 0;
         display: inline-block;
-        max-width: 500px;
-        text-shadow: 1px 3px 5px rgb(124, 124, 124);
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
     }
 
     .title p{
-        font-size: 20px;
+        font-size: 28px;
+
     }
 
     div.box-align{
@@ -120,14 +116,14 @@ div.links a:hover{
     }
 
     div.box{
-        height: 100px;
-        width: 140px;
+        height: 160px;
+        width: 200px;
         padding: 10px;
         margin: 15px auto;
     }
    
     div.box p{
-        font-size: 14px;
+        font-size: 17px;
         
     }
 
