@@ -99,7 +99,7 @@ div.links a:hover{
     
 
     .title h2{
-        font-size: 30px;
+        font-size: 40px;
         margin: 20px 0;
         display: inline-block;
     }
@@ -151,7 +151,7 @@ div.links a:hover{
 @media (min-width: 451px){
 
     .title h2{
-        font-size: 60px;
+        font-size: 40px;
         margin: 20px 0;
         display: inline-block;
     }
