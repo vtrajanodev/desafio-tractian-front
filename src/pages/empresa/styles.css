@@ -113,17 +113,21 @@ div.links a:hover{
     div.box-align{
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-auto-columns: 1px;
-        text-align: center;
+
     }
 
     div.box{
         height: 120px;
-        width: 170px;
+        width: auto;
         padding: 10px;
         margin: 15px ;
     }
    
+    div.box p{
+        font-size: 14px;
+        
+    }
+
     div.links{
         display: flex;
         height: 130px;
