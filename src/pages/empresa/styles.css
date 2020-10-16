@@ -110,16 +110,16 @@ div.links a:hover{
     }
 
     div.box-align{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
     }
 
     div.box{
-        height: 160px;
+        height: 150px;
         width: 200px;
         padding: 10px;
-        margin: 15px auto;
+        margin: 15px 10px;
     }
    
     div.box p{
@@ -130,18 +130,19 @@ div.links a:hover{
     div.links{
         display: flex;
         height: 130px;
+        justify-content: space-between;
       
     }
 
     div.links a{
     
-    font-size: 20px;
+    font-size: 19px;
     text-align: center;
     transition: all 0s; 
 
     }
     div.links a:hover{
-        font-size: 20px;
+        font-size: 19px;
         border: 2px solid black;
     
     }
