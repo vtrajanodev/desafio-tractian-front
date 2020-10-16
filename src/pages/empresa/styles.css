@@ -95,7 +95,7 @@ div.links a:hover{
 /*--------------------------------RESPONSIVIDADE-----------------------------------------------*/
 
 
-@media (max-width: 550px){
+@media (max-width: 400px){
     
 
     .title h2{
@@ -117,13 +117,12 @@ div.links a:hover{
 
     div.box{
         height: 150px;
-        width: 200px;
-        padding: 10px;
-        margin: 15px 10px;
+        width: 120px;
+        margin: 15px 20px;
     }
    
     div.box p{
-        font-size: 17px;
+        font-size: 15px;
         
     }
 
