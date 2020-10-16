@@ -96,7 +96,7 @@
 }
 
 .container .actions button:hover{
-    opacity: 0.7;
+    border: 1px solid black;
     cursor: pointer;
 }
 
@@ -119,6 +119,7 @@
 .container .actions button:disabled{
     opacity: 0.5;
     cursor: default;
+    border: none;
 }
 
 .container .actions button.desabilitado{
@@ -130,6 +131,8 @@
     cursor: default;
     color: black;
     opacity: 1;
+    border: none;
+
 }
 
 
@@ -138,6 +141,12 @@
 
 
 @media (max-width: 430px){
+
+    .container .actions{
+        display: flex;
+        justify-content: space-between;
+        margin: 0 15px 20px 15px;
+    }    
     
     .actives-list{
         padding: 0 20px;
