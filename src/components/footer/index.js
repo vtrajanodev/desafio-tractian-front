@@ -6,7 +6,6 @@ import './styles.css'
     <footer id="main-footer"> 
     
     <p>Feito por: Victor Trajano</p>
-    <p>Contato: (92)98212-7867</p>
     <p>Email: trajanodev@hotmail.com</p>
     </footer>
     

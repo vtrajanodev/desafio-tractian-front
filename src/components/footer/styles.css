@@ -2,10 +2,10 @@ footer#main-footer{
     height: 60px;
     background: #DADADA;
     width: 101%;
+    margin: 0 3px;
     font-weight: bold;
-    margin: 0 15px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: left;
 }
 
@@ -30,6 +30,7 @@ footer#main-footer p{
     footer#main-footer p{
         font-size: 14px;
         text-align: center;
+        justify-content: center;
         
     }
 }
@@ -39,7 +40,5 @@ footer#main-footer p{
     footer#main-footer p{
         font-size: 17px;
         text-align: center;
-
-        
     }
 }
