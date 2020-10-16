@@ -1,8 +1,6 @@
 body{
     background-color: #dadada;
-    overflow-x: hidden;
-    width: auto;
-
+    overflow: hidden;
 }
 
 .content{
@@ -96,7 +94,7 @@ div.links a:hover{
 /*--------------------------------RESPONSIVIDADE-----------------------------------------------*/
 
 
-@media (max-width: 500px){
+@media (max-width: 400px){
     
     .content{
         margin: 5px 1%;
@@ -104,7 +102,8 @@ div.links a:hover{
     
     .title h2{
         font-size: 26px;
-        margin: 10px 0;
+        margin: 10px 10px;
+        display: inline;
     }
 
     .title p{
@@ -112,17 +111,17 @@ div.links a:hover{
     }
 
     div.box-align{
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-        flex-wrap: wrap;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-auto-columns: 1px;
+        text-align: center;
     }
 
     div.box{
-        height: 180px;
-        width: 180px;
+        height: 120px;
+        width: 170px;
         padding: 10px;
+        margin: 15px ;
     }
    
     div.links{
@@ -142,4 +141,5 @@ div.links a:hover{
         border: 2px solid black;
     
     }
+    
 }
